@@ -1,0 +1,169 @@
+body, html{
+	width: 100%;
+	min-width: 300px;
+	height: 100%;
+	margin:0;
+	padding:0;
+	font-family: calibri;
+}
+
+img, embed, object, video, svg{
+	max-width: 100%;
+}
+
+.container, header, main, section, div, .logo, .title, .nav, .search, #searchbutton, .search input{
+	box-sizing: border-box;
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+main, header, footer{
+	width: 100%;
+}
+
+
+.logo{
+	width: 100px;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.title{
+	display: inline-block;
+	font-size: 4em;
+	text-align: center;
+	flex-grow: 1;
+	margin:0;
+}
+
+.search{
+	width: 100%;
+	height: 4em;
+	display: flex;
+	background-color: #eee;
+}
+
+.search input{
+	text-align: right;
+	font-size: 2em;
+	flex-grow: 3;
+	margin: 5px;
+	min-width: 50px;
+}
+
+#searchbutton{
+	font-size: 2em;
+	margin: 5px;
+	flex-grow: 1;
+}
+
+nav{
+	width: 100%;
+	min-width: 215px;
+	
+}
+
+.nav{
+	width: 32%;
+	padding: 10px;
+	display: inline-block;
+	text-align: center;
+}
+
+.nav svg{
+	height: 40px;
+}
+
+.caption{
+	text-align: center;
+}
+
+
+
+.suggested-recipes{
+	flex-grow: 1;
+}
+
+.recipe{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 5px;
+	padding: 5px;
+	background-color: #eee;
+}
+
+.recipe .stats{
+	width: 100%;
+}
+
+.recipe-pic{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 200px;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+
+.recipe-name{
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: rgba(0,0,0,0.8);
+    padding: 0.2em;
+	margin:0;
+	box-sizing: border-box;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.ingredients{
+	flex-grow: 1;
+	background-color: #eee;
+	margin: 5px;
+	padding: 5px;
+}
+
+
+
+
+@media screen and (min-width: 550px){
+	.search{
+		width: auto;
+		margin-right: auto;
+		flex-grow: 1;
+	}
+	
+	nav{
+		width: 215px;
+		flex-grow: 1;
+	}
+	
+	.recipe-pic{
+		width: 50%;
+	}
+	
+	.recipe .stats{
+		width: 50%;
+	}
+	
+	.recipe-ingredients, .method{
+		flex-grow: 1;
+	}
+	
+}
+
+@media screen and (min-width: 1200px){
+	/* add side margins over 1200px */
+	.container {
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
