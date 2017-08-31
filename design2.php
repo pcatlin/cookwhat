@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="all" href="/jquery-ui-1.10.0.custom.min.css" /> 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" media="all" href="cook.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="cook2.css" />
 	<script src='/jquery-3.1.1.min.js'></script>
 	<script src='/jquery-ui-1.10.0.custom.min.js'></script>
 	<script>
@@ -34,19 +34,16 @@ $(function(){
 	<div class='container'>
 
 		<header>
-			<div class='logo'>
-				<svg viewBox="0 20 120 80" id='logo' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-					<image xlink:href="icons/cooking.svg" />
-				</svg>
-			</div>
+			<svg viewBox="0 20 120 80" id='logo' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+				<image xlink:href="icons/cooking.svg" />
+			</svg>
 			<h1 class='title'>Cook</h1>
 		</header>
 
-		
-		<div class='search'>
+		<section class='search'>
 			<input id='searchbox' name='search' placeholder='what?' value='' />
 			<button id='searchbutton' type='submit' value=''><i class="material-icons">search</i></button>
-		</div>
+		</section>
 
 		<nav>
 			<div class='nav account'>
